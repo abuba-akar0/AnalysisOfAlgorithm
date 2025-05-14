@@ -13,7 +13,6 @@ This project implements the **Ant Colony Optimization (ACO)** algorithm in **C++
 ✅ Theoretical & empirical complexity analysis  
 ✅ Real-world logistics use case exploration  
 ✅ Ethical and operational impact discussion  
-✅ APA 6 research report and presentation
 
 ---
 
@@ -56,7 +55,7 @@ This project implements the **Ant Colony Optimization (ACO)** algorithm in **C++
 
 ```bash
 
-g++ -o aco.exe main.cpp ACO.cpp Randoms.cpp
+g++ -o aco.exe ACO_Run.cpp
 ./aco.exe
 ```
 2️⃣ **Input**
