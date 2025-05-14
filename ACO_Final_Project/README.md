@@ -37,14 +37,17 @@ This project implements the **Ant Colony Optimization (ACO)** algorithm in **C++
 ## 🖥️ Project Structure
 ```
 /ACO/
-├── /code/
+├── /code_samples/
 │   └── aco.cpp                # C++ Implementation
+├── /src/
+|   └── main.cpp
+├── README.md  
 ├── /docs/
 │   ├── pseudocode.md          # Step-by-step pseudocode
 │   ├── complexity.md          # Time & space analysis
+|   ├── REPORT.pdf             # Full APA 6 styled report
+|   ├── benchmark_graph.png    # Empirical runtime chart
 │   └── flowchart.png          # Algorithm flow diagram
-├── REPORT.pdf                 # Full APA 6 styled report
-├── benchmark_graph.png        # Empirical runtime chart
 └── README.md                  # This documentation file
 ```
 ---
