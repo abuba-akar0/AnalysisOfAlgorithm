@@ -7,6 +7,10 @@
 | **Time** | $O(I \times M \times N^2)$ | Each ant constructs a path (O(N²)), repeated for M ants and I iterations. |
 | **Space** | $O(N^2)$ | Stores distance and pheromone matrices. |
 
+## Benchmarke Graph
+### **OF code_samples ACO_Run.cpp file**
+![Benchmark Graph](./img_1.png)
+
 ## Empirical Benchmarking
 
 | Cities (N) | Runtime (seconds) |

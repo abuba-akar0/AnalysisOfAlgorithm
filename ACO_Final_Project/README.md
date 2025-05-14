@@ -1,10 +1,82 @@
-# Algorithm Analysis Project Instructions
-**Course: Analysis of Algorithms**
+# 🐜 Ant Colony Optimization (ACO) for Route Optimization 🚚📦
 
-## Objective
-Investigate an assigned algorithm’s theory, implementation, and real-world impact while demonstrating mastery of computational complexity and problem-solving rigor (aligned with Seoul Accord standards).
+## 📖 Overview
+This project implements the **Ant Colony Optimization (ACO)** algorithm in **C++** to solve the **Traveling Salesman Problem (TSP)** — a classic NP-Hard problem in combinatorial optimization. Inspired by the foraging behavior of real ants, ACO offers a robust metaheuristic technique for finding near-optimal solutions to complex problems where exhaustive search is computationally impractical.
 
 ---
+
+## ✨ Features
+✅ Clean, modular C++ implementation  
+✅ Adjustable parameters (alpha, beta, evaporation rate, number of ants, iterations)  
+✅ Console-based I/O with user-defined distance matrix  
+✅ Real-time display of best tour and length  
+✅ Theoretical & empirical complexity analysis  
+✅ Real-world logistics use case exploration  
+✅ Ethical and operational impact discussion  
+✅ APA 6 research report and presentation
+
+---
+
+## 📊 Algorithm Details
+
+- **Problem Type:** Combinatorial Optimization (NP-Hard)
+- **Approach:** Ant Colony Metaheuristic
+- **Key Concepts:**
+  - Pheromone trail updates
+  - Heuristic distance information
+  - Probabilistic decision-making
+  - Evaporation and reinforcement mechanism
+
+### 📈 Complexity
+|    Metric     |                Value                |
+|:-------------:|:-----------------------------------:|
+| Time Complexity | `O(iterations × ants × cities²)`  |
+| Space Complexity |          `O(cities²)`           |
+
+---
+
+## 🖥️ Project Structure
+```
+/ACO/
+├── /code/
+│   └── aco.cpp                # C++ Implementation
+├── /docs/
+│   ├── pseudocode.md          # Step-by-step pseudocode
+│   ├── complexity.md          # Time & space analysis
+│   └── flowchart.png          # Algorithm flow diagram
+├── REPORT.pdf                 # Full APA 6 styled report
+├── benchmark_graph.png        # Empirical runtime chart
+└── README.md                  # This documentation file
+```
+---
+
+## 🛠️ How to Run
+
+1️⃣ **Compile the C++ Program**
+
+```bash
+
+g++ -o aco.exe main.cpp ACO.cpp Randoms.cpp
+./aco.exe
+```
+2️⃣ **Input**
+- Provide the number of cities and a symmetric distance matrix when prompted.
+
+3️⃣ **Output**
+- Shortest tour found
+- Tour distance
+
+## 📊 Benchmark Summary
+
+| Number of Cities  | Execution Time (ms) | Best Tour Length |
+|:-----------------:|:-------------------:|:-----------------|
+|        5	         |         10	         | 42.0             |
+|        8	         |         25	         | 75.3             |
+|       10	         |         50	         | 100.5            |
+|       15	         |         95	         | 150.2            |
+|       20	         |        200	         | 215.9            |
+
+Full benchmark results and graph available in /docs/.
 
 ## CLOs and Seoul Accord Attributes
 
@@ -35,51 +107,16 @@ Investigate an assigned algorithm’s theory, implementation, and real-world imp
 
 ---
 
-## Project Overview
-Each student will:
-1. Research an assigned algorithm (e.g., Dijkstra’s, Knapsack DP, Merge Sort).
-2. Implement it in code (Python/C++/Java).
-3. Analyze its time/space complexity theoretically and empirically.
-4. Document its real-world applications and limitations.
-5. Present findings to the class.
+## 🌍 Real-World Use Case
 
-**Deliverables**: GitHub repository + report + presentation.
+### 📦 E-Commerce Logistics Route Optimization
 
----
+Ant Colony Optimization (ACO) dynamically identifies efficient delivery routes for **last-mile logistics networks**. By mimicking the pheromone-based foraging behavior of real ants, ACO iteratively improves route solutions, significantly reducing **operational costs**, **fuel consumption**, and **environmental impact** while ensuring **on-time deliveries** for e-commerce businesses.
 
-## Step-by-Step Tasks
+> This application demonstrates ACO’s capability to address complex, high-stakes logistical challenges through intelligent, nature-inspired metaheuristic optimization, delivering tangible operational and environmental benefits in real-world scenarios.
 
-### Phase 1: Algorithm Study (Aligns with CLO 2.1, 4.2)
-- Read academic sources/textbooks to understand:
-    - How it works: Step-by-step pseudocode/flowchart.
-    - Mathematical basis: Recurrence relations, invariants, or proofs (e.g., NP-Completeness for TSP).
-- **Seoul Accord Focus**: Attribute #2 (Depth of analysis), #3 (Depth of knowledge).
-
-### Phase 2: Implementation (Aligns with CLO 3.1, 6.1)
-- Write clean, modular code with:
-    - Input/output specifications.
-- **Seoul Accord Focus**: Attribute #1 (Conflicting requirements), #6 (Stakeholders).
-
-### Phase 3: Complexity Analysis (Aligns with CLO 4.1, 4.2)
-- Derive theoretical complexity (e.g., O(V+ E log V) for Dijkstra’s).
-- Benchmark empirical runtime.
-- **Seoul Accord Focus**: Attribute #4 (Unfamiliar issues), #8 (Interdependence).
-
-### Phase 4: Real-World Application (Aligns with CLO 5.1)
-- Identify a use case (e.g., Knapsack DP for resource allocation in disaster relief).
-- Discuss trade-offs (e.g., accuracy vs. speed in approximations).
-- **Seoul Accord Focus**: Attribute #7 (Consequences), #9 (Ill-defined requirements).
-
-### Phase 5: Report & Presentation (Aligns with CLO 5.1, 6.1)
-- **Report Sections**:
-    1. Introduction: Algorithm purpose.
-    2. Methodology: Code design, complexity analysis.
-    3. Applications: Real-world scenario + ethical considerations.
-    4. Limitations: When the algorithm fails (e.g., Dijkstra’s with negative weights).
-- **Presentation**: 10-minute summary with slides + live demo.
 
 ---
-
 ## Conclusion
  - This project aims to deepen your understanding of algorithms, their complexities, and real-world implications. By following the outlined steps, you will not only learn about a specific algorithm but also develop critical thinking and problem-solving skills essential for a career in computer science.
 
